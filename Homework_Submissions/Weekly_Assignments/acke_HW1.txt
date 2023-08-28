@@ -1,0 +1,9 @@
+Claire Acke
+8/27/2023
+Forecast Assignment 1
+
+For the first week prediction, I'm forecasting 86cfs. This is because
+it is consistent with what we could normally see in a year around this 
+time with an underperforming monsoon. For the second weeks, I went with 
+80cfs because I would anticipate there to be less precipitation as the 
+monsoon begins to wind down. 
