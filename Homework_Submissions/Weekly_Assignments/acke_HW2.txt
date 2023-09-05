@@ -1,0 +1,13 @@
+Claire Acke
+9/3/23
+Forecast Assignment 2
+
+I'm going to go with a forecast of 97cfs. From playing around with the 
+data in Python, it seems as though we have been getting an increase of 
+flow recently, along with some excess atmospheric moisture. For the 
+second week, I'm forecasting 93cfs. From the plot I made, it seems like
+the data oscillates, so streamflow should begin to decrease.
+
+
+
+
