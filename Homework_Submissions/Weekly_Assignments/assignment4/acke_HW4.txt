@@ -1,0 +1,27 @@
+Claire Acke
+HWRS 501
+Forecast 4
+
+1. Include discussion of the quantitative analysis that lead to your prediction. This can include any analysis you complete but must include at least two histograms and some quantitative discussion of flow quantiles that helped you make your decision.
+
+For the first week, I went with 120cfs. This is because there are not many instances of streamflow greater than 150cfs, but there are several that are above 100cfs. For the second week, I went with 115cfs. There are only 172 instances during the month of September that exceed a streamflow of 150cfs. The histograms that show a distribution of these occurrences are included in my assignment 5 folder. The quantiles of flow are also very close to zero.
+
+2. Describe the variable flow_data: what is it? What type of values is it composed of? What are its dimensions, and total size? 
+
+Flow data is an array full of different floats. It contains the dates along with the streamflow data for each day. It contains 12677 rows and 4 columns.
+
+3. How many times was the daily flow greater than your prediction in the month of September (express your answer in terms of the total number of times and as a percentage)? 
+
+The flow for the week one prediction was greater 498 times, or 3.92%. The flow for the second week prediction was greater 526 times, or 4.15%. 
+
+4. How would your answer to the previous question change if you considered only daily flows in or before 2000? Same question for the flows in or after the year 2010? (again with the total number of times and percentage)
+
+The first week was greater 247 times before 2000, or 1.94%, and greater 256 times after 2000 or 2.02%. The second week was greater 260 times before 2000, or 2.05%, and greater 271 times after 2000, or 2.14%.  
+
+5. How does the daily flow generally change from the first half of September to the second? 
+
+It appears that the flow generally seems to get greater towards the end of September.
+
+6. Reflect on the in class exercises this week. What parts are you having trouble with? Are there questionst that don't make sense to you? 
+
+3.1 was particularly confusing to me because I don't understand how we could reshape a function that has nine values into an array that is 3x2. 

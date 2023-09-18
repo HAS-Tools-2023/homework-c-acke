@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-filename = 'streamflow_week3.txt'
+filename = 'streamflow_week4.txt'
 filepath = os.path.join('C:\\Users\\clair\\OneDrive\\Desktop\\HASTools\\forecasting\\data\\', filename)
 
 data = pd.read_table(filepath, sep = '\t', skiprows = 30, names = ['agency_cd', 'site_no', 'datetime', 'flow', 'code'])
@@ -32,20 +32,20 @@ new_flow = [float(x) for x in flow]
 new_list = []
 
 # for i in range(len(new_flow)):
-#     if new_flow [i] > 95 and month[i] == 9:
-#         new_list.append(i)
-        
-# subset = [new_flow[j] for j in new_list]
-
-# for i in range(len(new_flow)):
-#     if new_flow [i] > 89 and month[i] == 9 and year[i] <= 2000: 
+#     if new_flow [i] > 115 and month[i] == 9:
 #         new_list.append(i)
         
 # subset = [new_flow[j] for j in new_list]
 
 for i in range(len(new_flow)):
-    if month[i] == 9:
+    if new_flow [i] > 115 and month[i] == 9 and year[i] >= 2000: 
         new_list.append(i)
-
-
+        
 subset = [new_flow[j] for j in new_list]
+
+#for i in range(len(new_flow)):
+#    if month[i] == 9:
+#        new_list.append(i)
+
+
+#subset = [new_flow[j] for j in new_list]
