@@ -2,6 +2,11 @@ Claire Acke
 HWRS 501
 Forecast 4
 
+##
+## Grade
+3/3 nice work. From here on out please make sure you use markdown files for your submission and include markdown formatting. Exercise 3.1 was a typo on my part. 
+##
+
 1. Include discussion of the quantitative analysis that lead to your prediction. This can include any analysis you complete but must include at least two histograms and some quantitative discussion of flow quantiles that helped you make your decision.
 
 For the first week, I went with 120cfs. This is because there are not many instances of streamflow greater than 150cfs, but there are several that are above 100cfs. For the second week, I went with 115cfs. There are only 172 instances during the month of September that exceed a streamflow of 150cfs. The histograms that show a distribution of these occurrences are included in my assignment 5 folder. The quantiles of flow are also very close to zero.
