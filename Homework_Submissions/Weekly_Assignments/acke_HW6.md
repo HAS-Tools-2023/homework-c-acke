@@ -2,6 +2,12 @@
 ### HWRS 501
 ### Forecast 6
 
+### Grade
+3/3 Great job!
+- Note if you have a lot of numbers to report you can either use a markdown table or you can just take a screenshot of the table in vs code and insert that image into your markdown. 
+- 
+###
+
 **Forecast Summary:** For the one week forecast, I have gone with 76cfs. For the second week forcast, I have gone with 82cfs. Both of these I feel like I have guessed closer to the minimum streamflow for October due to how little rain we have gotten recently. 
 
 **1. Provide a summary of the dataframe properties (what are the column names, what is its index, what data types do each of the columns have?)**
