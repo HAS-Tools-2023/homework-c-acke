@@ -2,7 +2,6 @@
 ### HWRS 501
 ### Forecast 9
 
-
 **Forecast** 
 My forecast for week one is 132.34, and my forecast for week two is 137.87.
 
