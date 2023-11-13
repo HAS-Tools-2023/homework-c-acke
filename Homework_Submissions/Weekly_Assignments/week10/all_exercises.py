@@ -133,10 +133,6 @@ daymet_data = pd.read_csv('daymet.csv', index_col = ['date'], parse_dates = ['da
 plt.scatter(daymet_data['dayl (s)'], daymet_data['tmax (deg c)'], s = 5)
 
 
-#2.4 Make a plot with three lines (1) average, (2) min and (3) max shortwave radiation (srad) vs the day of the year (i.e. 1-365)
-#Hint: use the pandas resample function for datetime objects and the plt.fill type for the shading
-
-#This one has me kind of confused on how to manipulate this with the resample function
-
-
+#2.4 Make a plot with lines of monthly average for 'tmax' for all months after jan 2015. Add shading to the plot extending to the monthly min and max of 'tmax' for the same period
+monthly_avg = daymet_df.resample('M').mean()['tmax (deg c)']
 
