@@ -2,6 +2,21 @@
 ### HWRS 501
 ### Forecast 9
 
+### Grade: 8/9
+Readability: 2.75/3 
+    - There were comments throughout but a lot of them were notes on things that could be done differently and not all steps were clearly commented. Totally fine to have notes to yourself in drafts but for this graded script the assignment was to provide as close to a clean code as possible with just comments on whats happening along the way for other people running the code. 
+    - In general your variable names were good but some of them were very long and specific to the date range you are testing. I would consider how to make this code more generalizable with your variable names. 
+Style: 2.75/3
+    - Consider adding some breaks to your code to make the sections clearer
+    - There were still multiple linting issues with spaces around function parameters and comments that I cleaned up. Hopefully some of the things I cleaned up for you will answer the questions you had about linting below. Feel free to stop by office hours if you have more questions though.  
+Code:  2.25/3
+    - The code wouldn't run because of local file paths (-0.5). 
+    - I left some comments throughout your code on ways you can make it more efficient. 
+    - Overall the biggest suggestion I have is to modify your code so that its not all hard coded to a specific forecast date and that your variable names are more flexible. 
+    - I would also suggest you experiment a bit more with creating functions. The mean one from class is a good starting point but I would like to see you expand from there. 
+
+
+
 **Forecast** 
 My forecast for week one is 132.34, and my forecast for week two is 137.87.
 
