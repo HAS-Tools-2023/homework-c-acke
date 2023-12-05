@@ -2,6 +2,12 @@
 ### HWRS 501
 ### Forecast 13
 
+### Grade 
+9/9: 
+Really nice work! Your code is much easier to follow this time and the documentation for your functions is excellent.  I am not sure exactly why it was giving you a subscriptable error but I would say that your use of the linter did make it generally much cleaner and easier to follow. Its okay with me if you don't listen to it 100% of the time it can give some erroneous suggestions. 
+
+I left you some comments in your script just for future reference. 
+
 **Forecast:** My week one forecast this week is 204cfs, and my week two forecast is 226.6cfs.
 
 

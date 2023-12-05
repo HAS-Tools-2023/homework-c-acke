@@ -11,14 +11,18 @@ import matplotlib.pyplot as plt
 
 # User input for forecast
 # The forecast is one week and two weeks from the date of forecast generation
-FORECAST_DATE = '2023-11-27'
+
+# LC - you are correct to have these in all caps because you are setting them as constants. 
+FORECAST_DATE = '2022-10-1'
 
 # Define the USGS parameters
 SITE_USGS = '09506000'
 START_DATE = '1989-01-01'
+# LC it would be nice to have your end date be set automatically from your forecast date. Could they just be the same thing or is there a reason this one needs to be two days earlier? 
 END_DATE = '2023-11-25'
 
 # Make functions to assist with pulling data
+# LC - Very nice doc strings that even include examples! Also nice job pulling your functions to the top of the script this makes it easier to read. 
 def pull_usgs_data(start, end):
     """
     Retrieve USGS water flow data for a specified site and time range.
@@ -100,6 +104,9 @@ def calculate_mean(data, period, column, start, end):
 usgs_data = pull_usgs_data(START_DATE, END_DATE)
 
 # Name variables for analysis
+# LC -- note that the comment above doesn't really description what is happening below.  A little more detail in teh comment would help. 
+# LC - nice job using the datetime functionality to make your date math easier and cleaner to follow. 
+
 forecast_date_dt = datetime.strptime(FORECAST_DATE, '%Y-%m-%d').date()
 month_start = forecast_date_dt - timedelta(days=14)
 month_end = forecast_date_dt + timedelta(days=14)
@@ -110,13 +117,16 @@ week2_forecast_date = forecast_date_dt + timedelta(days=14)
 data_month = usgs_data[month_start:month_end]
 
 # Calculate the mean flow per week in the month
+# LC - I'm getting an error here because the mean_weekly is not actually returning anything. I wonder if its because the month end is in the future (i.e. it puts the month end as 12/11/2023
 mean_weekly = calculate_mean(data_month, 'W', 'flow', month_start, month_end)
+# I'm a little confused about exactly what is happening here I can't check very well because this part isn't working but I wonder if you could get the same result by just setting the index from the beginning rather than first resetting the index and then dropping and setting an new one? 
 mean_weekly = mean_weekly.reset_index()
 mean_weekly['date'] = mean_weekly['datetime'].dt.date
 mean_weekly = mean_weekly.drop(['datetime'], axis=1)
 mean_weekly = mean_weekly.set_index('date')
 
 # Calculate differences
+# LC differences between what? Expand your comment a bit. 
 difference = mean_weekly['flow'][1] - mean_weekly['flow'][0]
 
 # Create week 1 and 2 forecasts based off of the mean difference
